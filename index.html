@@ -7,42 +7,48 @@
     <title>Verificador de edade</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body onload="calculadoraEdade()">
+
+
+<body>
+
+
     <header>
         <h1>Verificador de idade</h1>
-
     </header>
+
+
     <section id="conteudo">
         <div>
             <p id="ano">Ano de nascimento: 
                 <input type="number" name="txtano" id="txtano" min="0">
             </p>
-            <p>Sexo:
-                <input type="radio" name="radsex" id="mas" checked>
-                <label for="mas">Masculino</label>
+            <p>
+                Sexo:
+                <input type="radio" name="radsex" id="mas" checked> <!--radio es para crear un check, en este caso es masculino y femenino, necesita un nombre y un id-->
+                <label for="mas">Masculino</label>                  <!--Además, este necesita de una etiquieta, se manda a llamar con el id y se pone el nombre-->
                 <input type="radio" name="radsex" id="fem" checked>
                 <label for="mas">Femenino</label>
 
+                <!--En el caso de las etiquetas, el nombre es sumamente importante, si no tienen el mismo nombre, si clickeas las 2 casillas, no se desmarcara una y otra, sino 
+                que las 2. Asi que hay que tener esto en cuneta, preferiblemente es que tengan el mismo nombre para que no exista este problema.-->
+
             </p>
             <p>
-                <input type="button" value="Verificar">
+                <input type="button" value="Verificar" onclick="verificar()">
             </p>
-            <p id="preeche">
-                Preeche os dados acima para ver os resultado!
-            </p>
-
-            
-        
-
         </div>
 
+
+        <div id="res">
+            Preeche os dados acima para ver os resultado!
+        </div>
     </section>
-    
+
     <footer>
         <p>&copy; Arturo Ceceña</p>
-
-
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>

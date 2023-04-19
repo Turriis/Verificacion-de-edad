@@ -23,27 +23,21 @@ h1{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     border-radius: 2rem;
-    
-
-
-}
-
-p{
-    padding: 5px;
+    padding-bottom: 2rem;
     padding-left: 1.5rem !important;
+    display: block;
+
 
 
 }
+
+
 
 #ano{
     padding-top: 1.5rem !important;
 
 }
 
-#preeche{
-    padding-bottom: 1.5rem;
-
-}
 
 footer{
     text-align: center;
